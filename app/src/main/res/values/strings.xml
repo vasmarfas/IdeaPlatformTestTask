@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Idea Platform Test Task</string>
+    <string name="products_list">Список товаров</string>
+    <string name="search_products">Поиск товаров</string>
+    <string name="add_date">Дата добавления</string>
+    <string name="in_stock">На складе</string>
+    <string name="not_in_stock">Нет в наличии</string>
+    <string name="product_deletion">Удаление товара</string>
+    <string name="are_you_sure_to_delete_selected_product">Вы действительно хотите удалить выбранный товар?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="products_amount">Количество товара</string>
+    <string name="apply">Принять</string>
+    <string name="cancel">Отмена</string>
+    <string name="edit_icon">Иконка изменения</string>
+    <string name="delete_icon">Иконка удаления</string>
+</resources>
