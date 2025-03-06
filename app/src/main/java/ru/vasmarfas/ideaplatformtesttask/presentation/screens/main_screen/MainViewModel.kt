@@ -59,7 +59,7 @@ class MainViewModel @Inject constructor(private val repository: MainRepositoryIn
     private fun updateItemCountById(id: Int, newCount: Int) {
         viewModelScope.launch {
             _state.emit(_state.value.copy(isLoading = true))
-            delay(1000)
+            delay(1000) // Imitation of long request for demonstration of loading indicator
             repository.updateAmountById(id, newCount)
         }
     }
@@ -67,7 +67,7 @@ class MainViewModel @Inject constructor(private val repository: MainRepositoryIn
     private fun deleteItemById(id: Int) {
         viewModelScope.launch {
             _state.emit(_state.value.copy(isLoading = true))
-            delay(1000)
+            delay(1000) // Imitation of long request for demonstration of loading indicator
             repository.deleteItemById(id)
         }
     }
