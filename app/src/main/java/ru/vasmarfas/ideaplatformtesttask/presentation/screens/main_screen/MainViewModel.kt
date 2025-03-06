@@ -20,14 +20,14 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel @Inject constructor(private val repository: MainRepositoryInterface) :
     ViewModel() {
-    private val _state = MutableStateFlow(MainScreenState())
-    val state: StateFlow<MainScreenState> = _state.asStateFlow()
+    private val _state = MutableStateFlow(MainScreenState()) // Old variant with MVVM pattern
+    val state: StateFlow<MainScreenState> = _state.asStateFlow() // Old variant with MVVM pattern
 
     private val _action = MutableSharedFlow<Action>()
     private val action: SharedFlow<Action> = _action.asSharedFlow()
 
     init {
-        loadItems()
+        loadItems() // Old variant with MVVM pattern
         handleAction()
     }
 
@@ -37,6 +37,7 @@ class MainViewModel @Inject constructor(private val repository: MainRepositoryIn
         }
     }
 
+    // Old variant with MVVM pattern
     private fun loadItems() {
         viewModelScope.launch {
             repository.getItemsFlow().collectLatest { items ->
